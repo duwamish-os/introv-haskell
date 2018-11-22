@@ -16,11 +16,12 @@ build-type:          Simple
 extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
 
+
 executable introv-haskell
-  main-is:             Main.hs
+  main-is:             IntrovApp.hs
   -- other-modules:       
   -- other-extensions:    
-  build-depends:       base >=4.10 && <4.11
+  build-depends:       base ==4.*, servant >=0.15
   hs-source-dirs:      src
   default-language:    Haskell98
 
