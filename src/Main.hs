@@ -8,7 +8,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TypeOperators #-}
 
-module IntrovApp where
+module Main where
 
 import Prelude ()
 import Prelude.Compat
@@ -24,18 +24,18 @@ import Data.Maybe
 import Data.String.Conversions
 import Data.Time.Calendar
 import GHC.Generics
-import Lucid
+--import Lucid
 import Network.HTTP.Media ((//), (/:))
 import Network.Wai
 import Network.Wai.Handler.Warp
 import Servant
 import System.Directory
-import Text.Blaze
+--import Text.Blaze
 import Text.Blaze.Html.Renderer.Utf8
 import qualified Data.Aeson.Parser
 import qualified Text.Blaze.Html
 
-type UserAPI = "users" :> QueryParam "sortby" SortBy :> Get '[JSON] [User]
+type UserAPI = "users" :> Get '[JSON] [User]
 
 data SortBy = Age | Name
 
