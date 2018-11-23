@@ -67,3 +67,10 @@ $ curl -v localhost:8081/users
 * Connection #0 to host localhost left intact
 [{"email":"isaac@newton.co.uk","registration_date":"1683-03-01","age":372,"name":"Isaac Newton"},{"email":"ae@mc2.org","registration_date":"1905-12-01","age":136,"name":"Albert Einstein"}]
 ```
+
+
+Haskell 101:
+
+https://github.com/prayagupd/currys-paradox.hs
+
+![](emacs.png)
